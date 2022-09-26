@@ -1,0 +1,137 @@
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 100%;
+    box-shadow: 
+        0 1px 5px rgba(0, 0, 0, .2),
+        0 0   3px  rgba(0, 0, 0, .4)
+    ;
+    border-radius: 15px 15px;
+    margin-bottom: 2em;
+    justify-content: flex-end;
+
+    &__article {
+        display: flex;
+        border-radius: 15px;
+    }
+
+    &__image-container {
+        background-color: #FFDBE8;
+        width: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        border-top-left-radius: 15px;
+    }
+        
+    &__content {
+        background-color: #FFC0CB;
+        width: 50%;
+        border-top-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    &__price {
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+
+    &__description {
+        font-size: 1em;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__favourite {
+        width: 30px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    &__link {
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #BAACC7;
+        width: 10em;
+        height: 2em;
+        background-color: #F2DCFF;
+        margin: 5px 0;
+        align-self: center;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+}
+    
+@media (min-width: 450px) {
+
+    .cards-container {
+        margin: 0 auto;
+        // border: 2px solid red;
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        max-width: 1300px;
+    }
+
+    .card {
+        width: 200px;
+        max-width: 300px;
+        flex-grow: 1;
+
+
+
+    }
+
+    .card__article {
+        flex-direction: column;
+        // background-color: violet;
+    }
+    
+    .card__image-container {
+        width: 100%;
+        // background-color: aqua;
+        display: flex;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card__content {
+        // background-color: green;
+        width: 100%;
+        border-top-right-radius: 0;
+    }
+
+    .card__link {
+        background-color: #FFC0CB;
+
+    }
+
+    .card__favourite {
+        width: 30px;
+        position: absolute;
+
+        &:hover {
+            background-color: #FFC0CB;
+            border-radius: 50%;
+            padding: 3px;
+            
+        }
+    }
+
+    
+    
+
+        
+    
+}

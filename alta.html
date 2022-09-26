@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alta</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <div class="background-header">
+        <header class="main-header">
+            <div class="main-header__logo-container">
+                <img src="./img/logo-juguteria-cosmica.png" alt="logo" class="main-header__logo-img">
+            </div>
+            <div class="main-header__search-form-container">
+                <form action="https://www.google.com/search" target="_blanck" class="main-header__search-form">
+                    <label for="search" class="main-header__label"></label>
+                    <input type="search" name="p" id="search" class="main-header__input-search" placeholder=" Encontra lo que queres..">
+                    <input type="submit" class="main-header__input-submit" value="Buscar">
+                </form>
+            </div>
+    
+            <div class="main-header__cart-button-container">
+                <img src="./img/carrito.png" alt="carrito" class="main-header__cart-img">
+            </div>
+            <div class="main-header__hamburger-button-container">
+                <label class="hamburger-button" for="main-nav-toggle" title="Expandir barra de navegación" >
+                    <span class="hamburger-button__top-bread"></span>
+                    <span class="hamburger-button__meat"></span>
+                    <span class="hamburger-button__bottom-bread"></span>
+                </label>
+            </div>
+            <div class="main-header__main-nav-container">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="index.html">Inicio</a>
+                        </li>
+                        
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="contacto.html" target="_blank">Contacto</a>
+                        </li>
+    
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="nosotros.html" target="_blank">Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    
+    <div class="background">
+        <form class="main-form" action="alta.html" method="post" enctype="multipart/form-data">
+    
+            <div class="main-form__name-container">
+                <label class="label-name" for="name">Nombre</label>
+                <input class="input-name" id="name" name="nombre" autofocus required >
+            </div>
+    
+            <div class="main-form__price-container">
+                <label class="price-label" for="price">Precio</label>
+                <input class="price-input" id="price" name="precio" type="number" min="0" max="999999">
+            </div>
+    
+            <div class="main-form__stock-container">
+                <label class="stock-label" for="stock">Stock</label>
+                <input class="stock-input" name="stock" id="stock" type="number">
+            </div>
+    
+            <div class="main-form__category-container">
+                <label class="category-label" for="category">Categoría</label>
+                <select class="category-select" name="categoria" id="category">
+                    <option value="">Seleccioná una opción</option>
+                    <option value="41">Figuras</option>
+                    <option value="97">Peluches</option>
+                    <option value="126">Muñecas/os</option>
+                </select>
+            </div>
+                
+            <div class="main-form__brand-container">
+                <label class="brand-label" for="brand">Marca</label>
+                <select class="brand-select" name="marca" id="brand" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option value="44">Mattel</option>
+                    <option value="97">Toy</option>
+                    <option value="33">Marvel</option>
+                    <option value="77">Lego</option>
+                    <option value="64">Durabit</option>
+                </select>
+            </div>
+                
+                
+            <div class="main-form__free-shipping-container">
+                <input class="free-shipping-input" type="checkbox" name="envio" id="shipping" checked>
+                <label class="free-shipping-label" for="shipping">Envío sin cargo</label>
+            </div>
+    
+            <div class="main-form__short-description-container">
+                <label class="short-description-label" for="description-short">Descripción corta</label>
+                <textarea class="short-description-textarea" name="descripcion" id="description-short" rows="5"></textarea>
+            </div>
+    
+            <div class="main-form__long-description-container">
+                <label class="long-description-label" for="description-long">Descripción larga</label>
+                <textarea class="long-description-textarea" name="descripcion" id="description-long" rows="10"></textarea>
+            </div>
+    
+            <div class="main-form__age-from-container">
+                <label class="age-from-label" for="age-from">Edad desde</label>
+                <input class="age-from-input" id="age-from" type="text">
+            </div>
+    
+            <div class="main-form__age-until-container">
+                <label class="age-until-label" for="age-until">Edad hasta</label>
+                <input class="age-until-input" id="age-until" type="text">
+            </div>
+    
+            <div class="main-form__photo-container">
+                <label class="photo-label" for="photo">Foto</label>
+                <input class="photo-input" type="file" name="foto" id="photo" accept="image/*">
+            </div>
+                
+            <div class="main-form__btn-container">
+                <input class="submit-a" type="submit" value="Dar de alta">
+                <input class="reset-a" type="reset" value="Restablecer">
+            </div>
+        </form>
+    </div>
+
+    <footer class="main-footer">
+        <div class="main-footer__container">
+
+            <div class="main-footer__branches">
+                <h3 class="main-footer__header-branches">Sucursales</h3>
+                    <p class="main-footer__description-header">Balvanera</p>
+                    <p class="main-footer__description-header">Caballito</p>
+                    <p class="main-footer__description-header">Llavallol</p>
+            </div>
+        
+            <div class="main-footer__contacts">
+                <h3 class="main-footer__header-contacts">Contactos</h3>
+                    <p class="main-footer__description-contacts">Tel: 4248-2025</p>
+                    <p class="main-footer__description-contacts">Mail: cosmictoys@gmail.com</p>
+                    <p class="main-footer__description-contacts">Web: www.jugueteriacosmica</p>
+            </div>
+        
+            <div class="main-footer__social-media">
+                <h3 class="main-footer__header-social-media">Redes sociales</h3>
+                    <ul class="main-footer__list">
+                        <li class="main-footer__item">
+                            <a class="main-footer__link" href="https://es-la.facebook.com/" target="_blank">
+                                <img class="main-footer__img-link" src="./img/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+
+                        <li class="main-footer__item">
+                            <a class="main-footer__link" href="https://www.instagram.com/" target="_blank">
+                                <img  class="main-footer__img-link" src="./img/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+
+                        <li class="main-footer__item">
+                            <a class="main-footer__link" href="https://twitter.com/?lang=es" target="_blank">
+                                <img  class="main-footer__img-link" src="./img/twetter.png" alt="twetter">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="main-footer__description-footer-container">
+            <p class="main-footer__description-footer">&copy; 2022 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

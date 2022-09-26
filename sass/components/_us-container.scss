@@ -1,0 +1,113 @@
+.us-container {
+    text-align: center;
+    color: #7c09ce;
+    max-width: 1950px;
+    margin: 0 auto;
+    // border: 5px solid green;
+    
+    .us__main-content {
+        background-color: hsl(39, 100%, 50%, .5);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1em;
+        height: 450px;
+
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/zorrito.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: .3;
+            background-attachment: fixed;
+        }
+
+
+        .main-content__tittle {
+            position: relative;
+        }
+
+        .main-content__description {
+            position: relative;
+        }
+    }
+
+    .us__first-content {
+        background-color: rgb(187, 242, 187);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1em;
+        height: 450px;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/principito.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: .3;
+            background-attachment: fixed;
+        }
+
+
+    }
+
+    .us__second-content {
+        background-color: rgb(198, 228, 228);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1em;
+        height: 450px;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/totoro.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: .3;
+            background-attachment: fixed;
+        }
+    }
+
+    .us__third-content {
+        background-color: rgb(246, 246, 150);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1em;
+        height: 450px;
+
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/chihiro.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: .3;
+            background-attachment: fixed;
+        }
+    }
+}
+
+
